@@ -1,0 +1,212 @@
+#portfolio {
+  padding: 80px 15px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f6f6+0,f2eaea+54,f6f6f6+100 */
+  background: #f6f6f6; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #f6f6f6 0%,
+    #f2eaea 54%,
+    #f6f6f6 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #f6f6f6 0%,
+    #f2eaea 54%,
+    #f6f6f6 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #fdfdfd 0%,
+    #f2eaea 54%,
+    #f6f6f6 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+}
+
+#portfolio .title {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#portfolio .title .square {
+  background-color: #ffeded;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 23px;
+}
+
+#portfolio .title h1 {
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #16171b;
+  letter-spacing: 4px;
+  font-weight: 800;
+  z-index: 1;
+}
+
+#portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 300px);
+  grid-gap: 10px;
+}
+
+#portfolio .portfolio-container .box {
+  background-color: rgb(255, 111, 111);
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#portfolio .portfolio-container .box:hover {
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+}
+
+#portfolio .portfolio-container .box .hover-bg {
+  /* background-color: rgba(255, 255, 255, 0); */
+  transition: all 0.4s ease-in-out;
+  height: 100%;
+}
+
+#portfolio .portfolio-container .box:hover .hover-bg {
+  background-color: rgb(255, 189, 66, 0.6);
+}
+
+#portfolio .portfolio-container .box .image .hover-bg .title {
+  height: 100%;
+}
+
+#portfolio .portfolio-container .box .image .hover-bg .title .text {
+  background-color: #05050588;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 30px 60px;
+  transform: translate3d(0, 400px, 0);
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#portfolio .portfolio-container .box:hover .image .hover-bg .title .text {
+  transform: translate3d(0, 0px, 0);
+  transition: transform 0.5s ease-in-out 0.2s;
+}
+
+/*Box location*/
+#portfolio .portfolio-container .box.image1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+#portfolio .portfolio-container .box.image1 .image {
+  background: url("https://assets.awwwards.com/awards/submissions/2020/03/5e6a03de89692055458246.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* image 2 */
+#portfolio .portfolio-container .box.image2 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+#portfolio .portfolio-container .box.image2 .image {
+  background: url("https://cdn.dribbble.com/users/1909255/screenshots/10745065/media/2ead714bb2d5b53eca9e09e7e71eba74.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* image 3 */
+#portfolio .portfolio-container .box.image3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#portfolio .portfolio-container .box.image3 .image {
+  background: url("https://cdn.dribbble.com/users/2432994/screenshots/10747116/media/9ceff7dd75c0c9af9321030b4d6c2234.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* image 4 */
+#portfolio .portfolio-container .box.image4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+
+#portfolio .portfolio-container .box.image4 .image {
+  background: url("https://cdn.dribbble.com/users/443226/screenshots/10744103/media/7eb23b57e38288b48cad7447aed74556.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* image 5 */
+#portfolio .portfolio-container .box.image5 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+}
+
+#portfolio .portfolio-container .box.image5 .image {
+  background: url("https://cdn.dribbble.com/users/992274/screenshots/10747642/media/1ca749d807b413a7c14f466305af62a9.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* image 6 */
+#portfolio .portfolio-container .box.image6 {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+#portfolio .portfolio-container .box.image6 .image {
+  background: url("https://cdn.dribbble.com/users/730703/screenshots/10236876/media/f8f059e906d33770007147c7570dd4c5.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* image 7 */
+#portfolio .portfolio-container .box.image7 {
+  grid-column: 3 / 4;
+  grid-row: 3 / 5;
+}
+
+#portfolio .portfolio-container .box.image7 .image {
+  background: url("https://assets.awwwards.com/awards/images/2020/03/AirPods-Pro-Cover.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
